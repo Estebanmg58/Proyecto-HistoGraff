@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>HistoGraff</title>
+	<!--Este es el logo del titulo-->
+	<link rel="icon" type="img/png" href="Imagenes/favicon.png">
+	<!--Estos son mis estilos-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/LoginAdmin.css">
+	<!--Script de los iconos-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!--Mis scripts-->
+	<script src="js/validarLogin.js"></script>
+</head>
+
+<body>
+	<!--En este codigo se puede ver el frontend de el recuperar contraseña-->
+	<a href="LoginAdmin.html"><img class="atras" src="Imagenes/back.png" alt="..."></a>
+	<div class="container">
+		<div class="d-flex justify-content-center h-100 txt">
+			<div class="card">
+				<br>
+				<br>
+				<br>
+				<div class="card-header">
+					<center>
+						<h3>Ingresa tu email</h3>
+					</center>
+				</div>
+				<div class="card-body">
+					<form action="PhpCod/recuperar.php" method="POST">
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-envelope"></i></span>
+							</div>
+							<input type="email" id="email" name="email" class="form-control" placeholder="Email">
+						</div>
+						<center><input type="submit" name="Enviar" value="Enviar" class="btn login_btn"
+								style="width: 100%; background-color:#253BFF;"></center>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
