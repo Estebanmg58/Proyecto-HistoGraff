@@ -6,7 +6,7 @@ session_start();
   if (!isset($usuario)){
     header("location: ../LoginAdmin.html");
   } 
-
+//manda información a crudGrafiti.js para proceder a actualizar los grafitis en el modal
 include "conexion.php";
 $id = $_POST['id'];
 $sql="SELECT codGraffiti,NombreGraffiti,DescripcionGraffiti FROM graffiti WHERE codGraffiti='$id'";
