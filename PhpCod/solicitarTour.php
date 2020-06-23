@@ -30,7 +30,7 @@ $fecha = $_POST['fecha'];
 $hora = $_POST['hora'];
 $total = 0;
 
-$total = 35000 * $cantidad;
+$total = 35000 * intval($cantidad);
 
 $captcha = $_POST['g-recaptcha-response'];
 
@@ -54,16 +54,16 @@ $resultado = mysqli_query($conex, $inser);
 
 if (!$captcha){
     echo "<script>alert ('Por favor verifica el captcha');
-    window.history.go(-1);
+    
     </script>";
 } else if (!$resultado || !$arr['success']){
     echo "<script> alert ('Error al agendar verifique el captcha');
-    window.history.go(-1);
+    
     </script>";
     echo $resultado;
 } else if ($arr['success'] && $resultado){
     echo "<script> alert ('El tour se solicitó con éxito');
-    window.history.go(-1);
+    
     </script>";
 
     $mail = new PHPMailer(true);

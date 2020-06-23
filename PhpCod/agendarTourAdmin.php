@@ -68,11 +68,11 @@
                 </div>
                 <div class="form-group">
                     <label >Nombre solicitante</label>
-                    <input class="form-control" type="text"  name="nombre" data-validation="alpha" placeholder="ej: Carlos">
+                    <input class="form-control" type="text"  name="nombre"  placeholder="ej: Carlos">
                 </div>
                 <div class="form-group">
 			        <label>Apellidos solicitante</label>
-                    <input class="form-control" type="text"  name="apellido" data-validation="alpha" placeholder="ej: Pérez" >
+                    <input class="form-control" type="text"  name="apellido"  placeholder="ej: Pérez" >
                 </div>
                 <div class="form-group">
 			        <label >Teléfono móvil</label>

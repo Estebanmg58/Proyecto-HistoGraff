@@ -50,11 +50,11 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="nombre">Nombre</label>
-      <input type="text" class="form-control" name="nombre"  data-validation="alpha" placeholder="ej : Evelio">
+      <input type="text" class="form-control" name="nombre"   placeholder="ej : Evelio">
     </div>
     <div class="form-group col-md-6">
       <label for="apellido">Apellido</label>
-      <input type="text" class="form-control" name="apellido" data-validation="alpha"  placeholder="ej : Valencia">
+      <input type="text" class="form-control" name="apellido"   placeholder="ej : Valencia">
     </div>
   </div>
   <div class="form-group">

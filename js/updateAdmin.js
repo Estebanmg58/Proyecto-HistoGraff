@@ -38,8 +38,8 @@ window.addEventListener('load', function(){
             //muestra en el formulario los datos del admin
             $.ajax({
                 method:'POST',
-                url:'updateAdmin.php',
-                success: function (response){
+                url:'../PhpCod/updateAdmin.php',
+                success: function(response){
                     let json = JSON.parse(response)
                     json.forEach(json => {
                         $("#nombre").val(json.nombre)

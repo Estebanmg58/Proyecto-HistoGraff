@@ -12,7 +12,7 @@ session_start();
 
 
     $query="SELECT NombreAdministrador,ApellidoAdministrador,
-    telefonoAdministrador,email FROM administrador WHERE idAdministrador=1001160255";
+    telefonoAdministrador,Usuario FROM administrador WHERE idAdministrador=1192904074";
     $result=mysqli_query($conex,$query);
     $array=array();
     while ($row=$result ->fetch_assoc()) {
@@ -20,11 +20,9 @@ session_start();
             "nombre" => $row['NombreAdministrador'],
             "apellido" =>$row['ApellidoAdministrador'],
             "telefono" => $row['telefonoAdministrador'],
-            "email" => $row['email']
+            "email" => $row['Usuario']
         );
     }   
     $jsonString = json_encode($array);
     echo $jsonString;
-
-
 ?>

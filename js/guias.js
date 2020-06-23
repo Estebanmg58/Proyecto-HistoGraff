@@ -19,7 +19,7 @@ $(document).ready(function(){
                         if(data.ok != null){
                             swal("Borrado!", "correctamente!", "success");
                             setTimeout(function(){
-                                window.history.go(-1);
+                                var url = "/HistoGraff/PhpCod/Guias.php";
                                 $(location).attr('href',url);
                             },1000);
                         }
