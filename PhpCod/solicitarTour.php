@@ -11,7 +11,7 @@
     <?php
 
 include ('conexion.php');
-
+//envio de mensaje cuando se solicita el tour y registro en la base de datos
 use  PHPMailer \ PHPMailer \ PHPMailer ; 
 use  PHPMailer \ PHPMailer \ Exception ;
 
@@ -82,7 +82,7 @@ try {
     $mail->setFrom('histograff.c13@gmail.com', 'HistoGraff');
     $mail->addAddress($email);
 
-    
+        //cuerpo del correo
     $mail->isHTML(true);                                  
     $mail->Subject = 'La solicitud del tour ha sido exitosa';
     $mail->Body    = 'Señor(a) ' .$nombre. ', cordial saludo. Este correo es enviado para la confirmación de su tour el día ' .$fecha. ' a las ' .$hora. 
